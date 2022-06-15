@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+table, th, td
+{
+  border: solid 1px #DDD;
+  border-collapse: collapse;
+  padding: 2px 3px;
+  text-align: center;
+}
+th {
+  font-weight:bold;
+}
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #49a4ee;
+	color: #fff;
+	line-height: 1.5;
+}
+
+ul {
+	list-style: none;
+}
+
+.inline {
+  width:100%;
+  text-align: center;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+	overflow: auto;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+textarea{
+	min-width: 30vw;
+	min-height: 40vh;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 40px;
+	background: rgba(0, 0, 0, 0.3);
+	padding: 30px;
+	border-bottom: 5px #fff solid;
+}
+
+
+
+/* CSS */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+p {
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding:3px;
+  text-align: center;
+}
+
+.grade {
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding:3px;
+  text-align: left;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+table {
+  background-color: #fff;
+  color: rgb(65, 83, 245);
+  position: relative;
+  padding-top: 60px;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+th, td {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+
+ th {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: rgb(73, 129, 39);
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-inline: 30px;
+  color: white;
+}
+
+tbody td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+
+
+
+input:focus {
+  outline: none !important;
+  padding: 4px;
+}
+
+
+#red {
+  color: red;
+}
+ul > li {
+  display: inline;
+  border: none;
+  border-radius: 2px;
+  padding: 15px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #2196f3;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+
+}
+
+ul {
+  margin-bottom: 30px !important
+}
+#suggestedKeys {
+  text-align: center;
+  padding-bottom:  10px;
+}
+
+li {
+  width: 33%;
+  list-style: none;
+  text-align: center;
+
+}
+
+
+
+/* FLIP CARD */
+label {
+  color: #222;
+  font-size: 50px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 300px;
+  height: 200px;
+  margin: 50px auto;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 20;
+}
+
+.card div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  line-height: 200px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+.card .back {
+  background: #222;
+  color: #fff;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+input {
+  display: none;
+}
+
+:checked + .card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
